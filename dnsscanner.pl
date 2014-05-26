@@ -82,5 +82,5 @@ sub SCAN {
 
         $socket->send($dnsdata) or die "Send Error: $!\n";
     }
-
+exit;
 }

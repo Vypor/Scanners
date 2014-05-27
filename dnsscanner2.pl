@@ -60,7 +60,7 @@ for my $address ( $start_address .. $finish_address ) {
     print "Found: $found | Searched: $searched\r";
     $socket->send($dnsdata) or die "Send Error: $!\n";
 }
-
+exit;
 sub listener {
 
     my $listener = Net::Pcap::Easy->new(
